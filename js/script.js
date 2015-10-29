@@ -11,6 +11,7 @@ function sendRequest(u){
     return result;	//return object
 }
 
+
 function load_about(){
     $("#about_us").load('./includes/about.txt');
 }
@@ -134,13 +135,15 @@ function close_players(){
     document.getElementById('close-players').innerHTML = "";
 }
 
-function get_slides(){
+function get_slide_picture(){
     var strUrl = "controller/controller.php?cmd=4";
     var objResult = sendRequest(strUrl);
     if(objResult.result == 0){
         alert(objResult.message);
     }
-    displaySlides(objResult.slides);
+
+    //displaySlides(objResult.slides);
+    document.getElementById("landingImage").innerHTML = objResult.slide[0]['picture_heading'];
 }
 
 function displaySlides(slides){
