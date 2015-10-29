@@ -141,6 +141,7 @@ function get_slide_picture(){
     if(objResult.result == 0){
         alert(objResult.message);
     }
+
     //displaySlides(objResult.slides);
     document.getElementById("landingImage").innerHTML = objResult.slide[0]['picture_heading'];
 }
