@@ -10,14 +10,6 @@ define("DB_PORT", 3306);
 define("DB_USER", "1037935");
 define("DB_PWORD", "mole123");
 
-/*
-define("DB_HOST", 'localhost');
-define("DB_NAME", 'galaticos');
-define("DB_PORT", 3306);
-define("DB_USER", "root");
-define("DB_PWORD", "");
-*/
-
 define("LOG_LEVEL_SEC", 0);
 define("LOG_LEVEL_DB_FAIL", 0);
 
