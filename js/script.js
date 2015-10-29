@@ -291,3 +291,7 @@ function displayGalleryPhotos(pictures){
     }
     document.getElementById("thegallerypics").innerHTML = photos;
 }
+
+function iexist(){
+
+}
