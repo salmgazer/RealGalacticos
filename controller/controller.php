@@ -123,7 +123,7 @@ function get_slide_picture(){
         return;
     }
 
-    echo '{"result": 1, "slides": ['.jason_encode($row).']}"';
+    echo '{"result": 1, "slide": ['.json_encode($row).']}';
     /*while($row){
         echo json_encode($row);
         $row = $slide->fetch();

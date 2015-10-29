@@ -11,6 +11,7 @@ function sendRequest(u){
     return result;	//return object
 }
 
+
 function load_about(){
     $("#about_us").load('./includes/about.txt');
 }
@@ -140,11 +141,16 @@ function get_slide_picture(){
     if(objResult.result == 0){
         alert(objResult.message);
     }
+<<<<<<< HEAD
     //display slide here
     document.getElementById("landingImage").innerHTML = "image comes here";
     //not needed
     //displaySlides(objResult.slides);
 
+=======
+    //displaySlides(objResult.slides);
+    document.getElementById("landingImage").innerHTML = objResult.slide[0]['picture_heading'];
+>>>>>>> RealGalacticos/master
 }
 
 function displaySlides(slides){
