@@ -1,0 +1,17 @@
+.belowhead{
+    margin-top: 40px;
+}
+
+
+.slidepic{
+    width: 50%;
+}
+
+.slidepic:hover{
+    width: 100%;
+}
+label{
+    font-size: 13px;
+    font-weight: normal;
+    color: #000000;
+}

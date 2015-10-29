@@ -1,0 +1,367 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>Real Galacticos Sporting Club</title>
+    <!-- CSS  -->
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/templatemo_style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+
+
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300' rel='stylesheet' type='text/css'>
+
+    <script type="text/javascript" src="js/script.js"></script>
+</head>
+<body id="top" data-spy="scroll" data-target=".navbar-collapse">
+
+<!--start templatemo navigation -->
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon icon-bar"></span>
+                <span class="icon icon-bar"></span>
+                <span class="icon icon-bar"></span>
+            </button>
+            <a href="#" style="margin-left: -10%;"  class="navbar-brand">Real Galacticos SC</a>
+            <strong id="next_game" style="margin-left: 8%; color: #F9F9F9; background-color: #000000" class="navbar-brand nextmatch"></strong>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#top" class="smoothScroll">HOME</a></li>
+                <li><a href="#team" class="smoothScroll">OUR TEAM</a></li>
+                <li><a href="#gallery" class="smoothScroll">GALLERY</a> </li>
+                <li><a href="#about" class="smoothScroll">ABOUT</a></li>
+                <li><a href="#contact" class="smoothScroll">CONTACT</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<!-- end templatemo navigation -->
+<section id="home" class="text-center">
+    <div class="templatemo_headerimage">
+        <div class="flexslider">
+            <ul class="slides" id="myslides" style="text-shadow: 2px 2px 4px #000000;" >
+                <!--Slides come here-->
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- Put next match, News, Gallery -->
+<!-- start templatemo features -->
+<!--
+<section id="features" class="features text-center">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <h2>LATEST UPDATES</h2>
+            </div>
+
+            <div class="col-md-12"></div>
+            <div id="latest_news">
+
+                <!-- Latest news come here -->
+            <!--</div>
+            <div id="latest_video">
+
+                <!-- latest video comes here-->
+
+            <!--</div>
+
+        </div>
+    </div>
+</section>
+-->
+
+<!-- end templatemo features -->
+
+<!-- start templatemo team -->
+<section id="team" class="text-center" style="background-image: url(images/background.jpg); background-repeat: no-repeat; background-size: cover; background-attachment: fixed;">
+    <div class="container">
+        <div>
+            <div class="col-md-12">
+                <div>
+                    <h1 class="teamheading">MEET THE TEAM</h1>
+                </div>
+                <div class="row">
+                    <div class="card blue-grey darken-1 col-md-4" style="margin-left: -2px;">
+                        <div class="card-content white-text">
+                            <span class="card-title"><center>Under 13 Players</center></span>
+                            <p>Our under 13 players are young children that play for the passion for soccer and for keeping  for building sharp minds.<br><br></p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#current_players"><button class="waves-effect waves-light btn-large" onclick="get_players_byDivision(13)">View Players</button></a>
+                        </div>
+                    </div>
+                    <div class="card blue-grey darken-1 col-md-4" style="margin-left: 1px;">
+                        <div class="card-content white-text">
+                            <span class="card-title"><center>Under 15 Players</center></span>
+                            <p>Our under 15 players are career-focused. They learn to play as a team and lead themselves when the fight becomes difficult.<br></p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#current_players"><button class="waves-effect waves-light btn-large" onclick="get_players_byDivision(15)">View Players</button></a>
+                        </div>
+                    </div>
+                <div class="card blue-grey darken-1 col-md-4" style="margin-left: 1px;">
+                    <div class="card-content white-text">
+                        <span class="card-title"><center>Under 17 Players</center></span>
+                        <p>Under 15 players will graduate to our new Under 17 team. The Under 17 team will be a product of our fine training learned both in under 13 and 15.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#current_players"><button class="waves-effect waves-light btn-large" onclick="get_players_byDivision(17)">View Players</button></a>
+                    </div>
+                </div>
+                    </div>
+                <div class="row" id="players" style="display: inline;"></div>
+                <div id="close-players"></div>
+                <div class="row">
+                    <div class="card col-md-4" style="float: left;">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src=images/coach.jpg>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Mohammed Mutaru<i class="mdi-navigation-more-vert right"></i></span>
+                            <p><a href="http://materializecss.com/cards.html#!"><h3>FOUNDER AND COACH</h3></a></p>
+                        </div> <div class="card-reveal"> <span class="card-title grey-text text-darken-4">About Coach<i class="mdi-navigation-close right"></i></span> <p>He is a good coach<br>
+                    </div>
+                    </div>
+                    <div class="card col-md-8" style="float: right;">
+                        <div class="card-panel teal"> <span class="white-text"><strong class="card-title" style="font-size: 20px;">Latest and Upcoming games</strong></span> </div>
+
+                        <ul class="collection" id="upcomingmatches">
+                            </ul>
+
+                            <ul class="collection" id="latestmatches">
+                            </ul>
+
+                        </div>
+                </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- end templatemo team -->
+
+<!-- start single player -->
+<!--
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+                <div class="col-md-8 text-center">
+                    <!-- player name -->
+                    <!--<div id="single_player"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+-->
+<!-- end single player -->
+
+<!-- Gallery starts here -->
+<section id="gallery" style="background-image: url(images/background.jpg);background-repeat: no-repeat; background-size: cover; background-attachment: fixed; margin-top: -2px;">
+    <div class="container">
+        <div class="row center" style="margin-top: 50px;">
+            <div class="text-center">
+                <h2 class="teamheading">GALLERY</h2><br>
+                    <h2 class="oppteamheading">"TRAIN BETTER, PLAY BETTER”.</h2>
+            </div>
+            <div class="card blue-grey col s12 m6 galleryTrain">
+                <div class="card-content white-text">
+                    <span class="card-title"><center>Training Gallery</center></span>
+                    <p>We do our best to involve you on our journey.</p>
+                </div>
+                <div class="card-action">
+                    <a href="#current_gallery"><button class="waves-effect waves-light btn-large" onclick="trainingGallery()">View Gallery</button></a>
+                </div>
+            </div>
+            <div class="card blue-grey col s12 m6 galleryMatch">
+                <div class="card-content white-text center">
+                    <span class="card-title"><center>Match Gallery</center></span>
+                    <p>Our tough and happy moments on the pitch.</p>
+                </div>
+                <div class="card-action">
+                    <a href="#current_gallery"><button class="waves-effect waves-light btn-large" onclick="matchGallery()">View Gallery</button></a>
+                </div>
+            </div>
+
+            </div>
+        </div>
+    <div class="container" id="current_gallery">
+        <div class="row" id="thegallery">
+            <!--Content comes here-->
+        </div>
+    </div>
+    </section>
+<!-- Gallery ends here -->
+<!-- Gallery photos -->
+<section style="background-image: url(images/background.jpg);background-repeat: no-repeat; background-size: cover; background-attachment: fixed;">
+<div class="container" id="gallerypcis">
+    <div class="row" id="thegallerypics">
+        <!--Content comes here-->
+    </div>
+</div>
+</section>
+
+<!-- start templatemo about -->
+<section id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8 text-center">
+                <h2>ABOUT US</h2>
+                <div id="about_us">
+                    <h2 class="orange-text">"TRAIN BETTER, PLAY BETTER”.</h2>
+                </div>
+            </div>
+            <div class="col-md-12"></div>
+            <div class="col-sm-6 col-md-6 info">
+                <h3>OUR MISSION</h3>
+                <div id="vision">
+                    <p>Real Galacticos Sporting Club is a non-profit organization focused on developing young soccer players with the correct soccer fundamentals that they will use throughout their career.
+We shall strive to provide the technical training that all great players learn in street soccer or pick-up games. Our players have the opportunity to grow with the club and represent The Club in different team competitions.
+We are all about the TECHNICAL aspect of the game, which is skipped by many young players as they grow into young adults. With this as a focus, we shall train players to develop teamwork spirit and leadership skills. We hope to produce the next generation of quintessential soccer players from Ghana and Africa at large.
+</p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6 info">
+                <h3>OUR OBJECTIVES</h3>
+                <div id="story">
+                    <li>To teach every academy player how to run properly using their arms and proper body shape to obtain the best balance and running speed.</li>
+
+<li>To familiarize young soccer players with the soccer ball through constant contact with the ball using different parts of both feet.</li>
+<li>Winning at this age is not important, good play and creativity on the soccer field is.</li>
+
+<li>To build a reputable soccer academy that will produce quality players with the correct soccer foundation in order for them to keep improving as players.</li>
+
+<li>To train and retain all players and guide them towards simple, correct way of soccer.</li>
+
+<li>All of the players that grow up with the club are sure to develop lifelong friendships and memories with teammates and other club members.</li>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end templatemo about -->
+
+
+<!-- start templatemo contact -->
+<section id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8 text-center">
+                <h2>CONTACT US</h2>
+                <p id="contact-message">Reach Us Today</p>
+            </div>
+            <div class="col-md-12"></div>
+            <div class="col-sm-6 col-md-4 address">
+                <h3>OUR ADDRESS</h3>
+                <p><i class="fa fa-phone"></i>  +233-244-785-085</p>
+                <p><i class="fa fa-envelope-o"></i> <a href="#" type="email">realgalacticossportingclub@gmail.com</a></p>
+                <p><i class="fa fa-globe"></i> <a href="#">http://realgalacticos.host56.com</a></p>
+                <p><i class="fa fa-map-marker"></i> Amasaman, Oshuman</p>
+            </div>
+            <div class="col-sm-6 col-md-8">
+                <div class="col-md-6">
+                    <input type="text" class="form-control" id="sender_name" placeholder="Name">
+                </div>
+                <div class="col-md-6">
+                    <input type="email" id="sender_email" class="form-control" placeholder="Email">
+                </div>
+                <div class="col-md-12">
+                    <input type="text" class="form-control" id="sender_subject" placeholder="Subject">
+                </div>
+                <div class="col-md-12">
+                    <textarea class="form-control" rows="6" id="sender_message" placeholder="Message"></textarea>
+                </div>
+                <div class="col-md-12">
+                    <button onclick="sendMessage()" class="btn-large waves-effect waves-light">SEND MESSAGE</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end templatemo contact -->
+
+<!-- start templatemo footer -->
+<footer class="text-center">
+    <div class="container">
+        <div class="row">
+            <div class="social_icon">
+                <a href="https://www.facebook.com/groups/747943455295202/" target="_blank" class="fa fa-facebook"></a>
+            </div>
+            <p>Copyright © 2015 Real Galacticos Sporting Club </p>
+        </div>
+    </div>
+</footer>
+<!-- end templatemo footer -->
+
+<!--<a href="#top" class="go-top"><i class="fa fa-chevron-up fa-1x"></i></a>-->
+<!-- end back to top -->
+<!--<script src="js/jquery-2.1.1.min.js"></script>-->
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<script src="js/jquery.flexslider.js"></script>
+<!--  Scripts-->
+
+<script src="js/materialize.js"></script>
+<script src="js/init.js"></script>
+
+
+
+<!-- start templatemo back to top js -->
+<script>
+    $(document).ready(function() {
+        next_match();
+        get_slides();
+        // FlexSlider
+        $('.flexslider').flexslider({
+            animation: "fade",
+            directionNav: false
+        });
+
+        // Show or hide the sticky footer button
+        /*$(window).scroll(function() {
+            if ($(this).scrollTop() > 200) {
+                $('.go-top').fadeIn(200);
+            } else {
+                $('.go-top').fadeOut(200);
+            }
+        });*/
+        // Animate the scroll to top
+        $('.go-top').click(function(event) {
+            event.preventDefault();
+            $('html, body').animate({scrollTop: 0}, 300);
+        })
+       // get_latest_news();
+        //get_latest_video();
+        upcomingmatches();
+        //latestmatches();
+        //load_contact_message();
+    });
+</script>
+<!-- end templatemo back to top js -->
+
+</body>
+</html>

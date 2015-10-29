@@ -1,0 +1,30 @@
+
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h1 class="panel-title"><i class="fa fa-long-arrow-right fa-fw"></i>Add New Training Gallery</h1>
+    </div>
+    <div class="panel-body">
+        <!-- Put content here -->
+        <div class="row" style="margin-bottom: 20px;">
+            <div class="col-lg-4">
+                <label>Gallery name</label><input class="form-control" type="text" name="galleryname" id="galleryname">
+            </div>
+            <div class="col-lg-4">
+                <label>Training Date</label><input class="form-control" type="date" name="training_date" id="training_date">
+            </div>
+            <div class="col-lg-4">
+                <label>Description (very short)</label><input class="form-control" type="text" name="description" id="description">
+            </div>
+        </div>
+        <div class="row" style="margin-bottom: 20px;">
+            <div class="col-lg-4">
+                <label>Gallery Picture</label><input class="form-control" type="text" name="picture" id="picture" placeholder="picture">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4" align="center">
+                <button class="form-control btn btn-success" onclick="addNewTrainingGallery()">Submit</button>
+            </div>
+        </div>
+    </div>
+    <center><button class="btn btn-danger" onclick="collapseaddGallery()">Cancel</button> </center></div>
