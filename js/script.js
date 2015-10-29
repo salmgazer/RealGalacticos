@@ -140,7 +140,10 @@ function get_slide_picture(){
     if(objResult.result == 0){
         alert(objResult.message);
     }
-    displaySlides(objResult.slides);
+    //display slide here
+    document.getElementById("landingImage").innerHTML = "image comes here";
+    //not needed
+    //displaySlides(objResult.slides);
 
 }
 
