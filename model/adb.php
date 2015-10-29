@@ -4,11 +4,11 @@
  * description: A root class for all manage classes. This class communicates with DB
  */
 
-define("DB_HOST", 'mysql9.000webhost.com');
-define("DB_NAME", 'a6210102_real');
+define("DB_HOST", 'localhost');
+define("DB_NAME", '1037935');
 define("DB_PORT", 3306);
-define("DB_USER", "a6210102_real");
-define("DB_PWORD", "mole123##");
+define("DB_USER", "1037935");
+define("DB_PWORD", "mole123");
 
 /*
 define("DB_HOST", 'localhost');
