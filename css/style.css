@@ -8,7 +8,7 @@
   margin-right: auto;
   margin-top: 10px;
   margin-bottom: 10px;
-  background: url('images/slider/light-bulb.jpg') center / cover;
+  background: url('../images/slider/light-bulb.jpg') center / cover;
 }
 .demo-card-image > .mdl-card__actions {
   height: 52px;
@@ -22,11 +22,11 @@
   text-align: center;
 }
 .demo-card-square.mdl-card {
-  width: 320px;
+  width: auto;
   height: 320px;
 }
 .demo-card-square > .mdl-card__title {
   color: #fff;
   background:
-    url('images/slider/sliced-apple.jpg') bottom right 15% no-repeat #46B6AC;
+    url('../images/slider/sliced-apple.jpg') bottom right 15% no-repeat #46B6AC;
 }
