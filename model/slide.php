@@ -23,28 +23,25 @@ class slide extends adb{
       }
       return $this->fetch();
   }
-    /*
-    function get_slides(){
-        $str_sql = "SELECT * from slide where slide_status = 'on'";
-        if(!$this->query($str_sql)){
-            return false;
-        }
-        return $this->fetch();
-    }
-    */
-    function add_slide($firstline, $secondline, $picture){
-        $str_sql = "INSERT into slide (firstline, secondline, picture) values ('$firstline', '$secondline', '$picture')";
+
+  /**
+   * function to add a new picture into the slide-pictures table
+   */
+    function add_new_picture($heading, $path, $status) {
+        $str_sql = "INSERT into slide_pictures (picture_heading, picture_path, slide_status) values ('$heading', '$path', '$status')";
         return $this->query($str_sql);
     }
 
    /**
-    * function to select slider picture
+    * function to set sliders picture
     */
-    function on($id){
-      $str_sql = "UPDATE slide SET slide-"
+    function set_slide_picture($id){
+      $str_sql = "UPDATE slide_pictures SET slide_status = 'on' WHERE picture_id = $id";
+      return  $this->query($str_sql);
     }
 
-    function update($firstline, $seondline, $picture){
-
+    function update_picture($id, $heading, $path){
+      $str_sql = "UPDATE slide_pictures SET picture_heading = '$heading' AND picture_path = '$path' WHERE picture_id = $id";
+      return  $this->query($str_sql);
     }
 }
