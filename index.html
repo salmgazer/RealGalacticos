@@ -6,15 +6,11 @@
   <link rel="stylesheet" href="css/material.min.css">
   <link rel="stylesheet" href="css/materialdesignicons.min.css">
   <link rel="stylesheet" href="css/material-icons.css">
+  <link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
   <!-- Uses a header that contracts as the page scrolls down. -->
-<style>
-.demo-layout-waterfall .mdl-layout__header-row .mdl-navigation__link:last-of-type  {
-  padding-right: 0;
-}
-</style>
 
 <div class="demo-layout-waterfall mdl-layout mdl-js-layout">
   <header class="mdl-layout__header mdl-layout__header--waterfall">
@@ -56,34 +52,12 @@
       <a class="mdl-navigation__link" href="">Link</a>
     </nav>
   </div>
-  <main class="mdl-layout__content mdl-grid">
+  <main class="mdl-layout__content">
     <!-- <div class="page-content mdl-cell mdl-cell--12-dp"> -->
-    <div class="page-content" id="landingImage">
+    <div class="page-content mdl-grid" id="landingImage">
       <!-- Image card -->
-      <style>
-      .demo-card-image.mdl-card {
-        width: 100%;
-        height: auto;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        background: url('images/slider/light-bulb.jpg') center / cover;
-      }
-      .demo-card-image > .mdl-card__actions {
-        height: 52px;
-        padding: 16px;
-        background: rgba(0, 0, 0, 0.2);
-      }
-      .demo-card-image__filename {
-        color: #fff;
-        font-size: 14px;
-        font-weight: 500;
-        text-align: center;
-      }
-      </style>
 
-      <div class="demo-card-image mdl-card mdl-shadow--2dp">
+      <div class="demo-card-image mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col">
         <div class="mdl-card__title mdl-card--expand"></div>
         <div class="mdl-card__actions mdl-cell mdl-cell--9-dp">
           <span class="demo-card-image__filename">Image.jpg</span>
@@ -93,17 +67,6 @@
     </div>
     <div id="landingNews">
       <!-- Square card -->
-      <style>
-      .demo-card-square.mdl-card {
-        width: 320px;
-        height: 320px;
-      }
-      .demo-card-square > .mdl-card__title {
-        color: #fff;
-        background:
-          url('images/slider/sliced-apple.jpg') bottom right 15% no-repeat #46B6AC;
-      }
-      </style>
 
       <div class="demo-card-square mdl-card mdl-shadow--2dp">
         <div class="mdl-card__title mdl-card--expand">
