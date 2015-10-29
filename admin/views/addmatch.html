@@ -1,0 +1,63 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h1 class="panel-title"><i class="fa fa-long-arrow-right fa-fw"></i> Add New Match</h1>
+    </div>
+    <div class="panel-body">
+        <!-- Put content here -->
+<div class="row" style="margin-bottom: 20px;">
+    <div class="col-lg-4">
+        <label>Match category</label>
+        <select id="match_category" class="form-control">
+            <option value="1">Friendly</option>
+            <option value="2">League</option>
+            <option value="3">Cup</option>
+        </select>
+    </div>
+    <div class="col-lg-4">
+        <label>Match date</label>
+        <input type="datetime-local" class="form-control" id="match_date">
+    </div>
+    <div class="col-lg-4">
+        <label>Opponent name</label>
+        <input type="text" class="form-control" id="opponent_name">
+    </div>
+</div>
+<div class="row" style="margin-bottom: 20px;">
+    <div class="col-lg-4">
+        <label>Opponent initials</label>
+        <input type="text" id="opponent_initials" class="form-control">
+        </div>
+    <div class="col-lg-4">
+        <label>Venue</label>
+        <input  type="text" id="venue" class="form-control">
+    </div>
+    <div class="col-lg-4">
+        <label>Venue Status</label>
+        <select id="venue_status" class="form-control">
+            <option value="1">Home</option>
+            <option value="2">Away</option>
+        </select>
+    </div>
+    </div>
+<div class="row" style="margin-bottom: 20px;">
+    <center>
+        <div style="width: 40%; margin-bottom: 20px;">
+            <label>Division</label>
+            <select id="division" class="form-control">
+                <option value="1">13</option>
+                <option value="2">15</option>
+                <option value="3">17</option>
+            </select>
+        </div>
+        </center>
+        <center>
+        <div>
+    <label>Match Description</label>
+    <textarea id="match_description" class="form-control" style="width: 70%;"></textarea>
+            </div>
+        </center>
+    </div>
+<center><button class="btn btn-success" onclick="add_new_match()" style="width: 80%; margin-bottom: 5%; margin-top: 2%;">Add Match</button></center>
+        </div>
+    </div>
+<center><button class="btn btn-danger" style="width: 80%;" onclick="collapseAddMatch()">Cancel</button> </center>

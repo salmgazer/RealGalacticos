@@ -1,0 +1,64 @@
+
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h1 class="panel-title"><i class="fa fa-long-arrow-right fa-fw"></i> Add New Player</h1>
+    </div>
+    <div class="panel-body">
+        <!-- Put content here -->
+            <div class="row" style="margin-bottom: 20px;">
+                <div class="col-lg-4">
+                    <label>Fullname</label><input class="form-control" type="text" name="player_name" id="player_name">
+                </div>
+                <div class="col-lg-4">
+                    <label>Date of birth:</label><input class="form-control" type="date" id="date_of_birth" name="date_of_birth">
+                </div>
+                <div class="col-lg-4">
+                    <label>Current Division</label>
+                    <select class="form-control" id="division" name="division">
+                        <option value="1">13</option>
+                        <option value="2">15</option>
+                        <option value="3">17</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row" style="margin-bottom: 20px;">
+                <div class="col-lg-4">
+                    <label>Select Player's position</label>
+                    <select id="position" name="position" class="form-control">
+                        <option value="1">GK</option>
+                        <option value="2">CB</option>
+                        <option value="3">RB</option>
+                        <option value="4">LB</option>
+                        <option value="5">SW</option>
+                        <option value="6">WB</option>
+                        <option value="7">DM</option>
+                        <option value="8">CM</option>
+                        <option value="9">LM</option>
+                        <option value="10">RM</option>
+                        <option value="11">LW</option>
+                        <option value="12">RW</option>
+                        <option value="13">CAM</option>
+                        <option value="14">LAM</option>
+                        <option value="15">RAM</option>
+                        <option value="16">SS</option>
+                        <option value="17">CF</option>
+                    </select>
+                </div>
+                <div class="col-lg-4">
+                    <label>Picture of player</label>
+                    <input type="file" class="form-control" id="player_picture" name="player_picture">
+                </div>
+                <div class="col-lg-4">
+                    <label>Date signed</label>
+                    <input class="form-control" type="date" id="signed" name="signed">
+                </div>
+            </div>
+            <br>
+            <center>
+                <label>Player Bio (About the player)</label>
+                <textarea class="form-control" style="width: 70%; height: 200px;" id="about" name="about"></textarea>
+            </center>
+    </div>
+    <center><button onclick="addPlayer()" class="btn btn-success" style="width: 80%; margin-bottom: 5%; margin-top: 2%;">Add Player</button></center>
+</div>
+<center><button class="btn btn-danger" style="width: 80%;" onclick="collapseAddPlayer()">Cancel</button> </center>

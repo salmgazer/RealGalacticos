@@ -1,0 +1,41 @@
+
+<div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <h1 class="panel-title"><i class="fa fa-long-arrow-right fa-fw"></i> Manage News</h1>
+                            </div>
+                            <div class="panel-body">
+                            <!-- Put content here -->
+                                <form class="form-group">
+                                    <div class="row" style="margin-bottom: 20px;">
+                                        <div class="col-lg-4">
+                                        <label>News thumbnail</label><input class="form-control" type="file" name="news_thumbnail" id="news_thumbnail">
+                                        </div>
+                                        <div class="col-lg-4">
+                                        <label>Choose first picture(optional):</label><input class="form-control" type="file" name="news_pic1" id="news_pic1">
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <label>Choose second picture(optional):</label><input class="form-control" type="file" name="news_pic2" id="news_pic2">
+                                        </div>
+                                    </div>
+                                    <div class="row" style="margin-bottom: 20px;">
+                                        <div class="col-lg-4">
+                                             <label>News Date</label><input class="form-control" type="datetime-local" name="news_date" placeholder="Date of news">
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <label>Author of the news</label><input class="form-control" type="text" name="news_author" value="Mohammed Mutaru" placeholder="Author of news">
+                                    </div>
+                                    </div>
+                                    <br>
+                                    <div>
+                                        <label>News Headline</label>
+                                        <input class="form-control" name="news_headline" id="news_headline">
+                                    </div>
+                                    <br>
+                                    <center>
+										<label>News content</label>
+                                        <textarea class="form-control" style="width: 70%; height: 200px;" id="news_content" name="news_content"></textarea>
+                                    </center>
+                                </form>
+                            </div>
+	</div>
+<center><button class="btn btn-danger" onclick="collapsenewscontent()">Cancel</button> </center>

@@ -1,0 +1,313 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Real Galacticos Sporting Club - Admin</title>
+
+    <!-- Material css -->
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/sb-admin.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <!--<link href="css/plugins/morris.css" rel="stylesheet">-->
+
+    <!-- Custom Fonts -->
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300' rel='stylesheet' type='text/css'>
+
+    <script type="text/javascript" src="js/script.js"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <!--<script type="text/javascript">
+    $(document).ready(function() {
+	news();
+    });
+    </script>-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Real Galacticos - Admin</a>
+            </div>
+            <!-- Top Menu Items -->
+            <ul class="nav navbar-right top-nav">
+                <li class="dropdown">
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> Admin <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="#" onclick="adminLogout()"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav side-nav">
+                    <li class="active">
+                        <a href="index.html"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="#" onclick="manager()"><i class="fa fa-fw fa-bar-chart-o"></i> Managers</a>
+                    </li>
+                    <li>
+                        <a href="#" onclick="player()"><i class="fa fa-fw fa-table"></i>Players</a>
+                    </li>
+                    <li>
+                        <a href="#" onclick="news()"><i class="fa fa-fw fa-edit"></i> News</a>
+                    </li>
+                    <li>
+                        <a href="#" onclick="match()"><i class="fa fa-fw fa-desktop"></i>Matches</a>
+                    </li>
+                    <li>
+                        <a href="#" onclick="gallery()"><i class="fa fa-fw fa-desktop"></i>Gallery</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#videos"><i class="fa fa-fw fa-arrows-v"></i> Videos<i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="videos" class="collapse">
+                            <li onclick="training()">
+                                <a href="#">Training</a>
+                            </li>
+                            <li onclick="stunt()">
+                                <a href="#">Stunts</a>
+                            </li>
+                            <li onclick="matchvideo()">
+                                <a href="#">Match</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#others"><i class="fa fa-fw fa-arrows-v"></i> Others<i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="others" class="collapse">
+                            <li onclick="slides()">
+                                <a href="#">Slides</a>
+                            </li>
+                            <li onclick="about_us()">
+                                <a href="#">About Us</a>
+                            </li>
+                            <li onclick="vision()">
+                                <a href="#">Vision</a>
+                            </li>
+                            <li onclick="story()">
+                                <a href="#">Story</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </nav>
+
+        <div id="page-wrapper">
+
+            <div class="container-fluid">
+
+                <!-- Page Heading -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="page-header">
+                            Real Galacticos Sporting Club
+                        </h1>
+                    </div>
+                </div>
+                <!-- /.row -->
+
+
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <div class="row">
+                                    <div class="col-xs-3">
+                                        <i class="fa fa-comments fa-5x"></i>
+                                    </div>
+                                    <div class="col-xs-9 text-right">
+                                        <div class="huge">26</div>
+                                        <div>News</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" onclick="news()">
+                                <div class="panel-footer">
+                                    <span class="pull-left">Manage News</span>
+                                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="panel panel-green">
+                            <div class="panel-heading">
+                                <div class="row">
+                                    <div class="col-xs-3">
+                                        <i class="fa fa-tasks fa-5x"></i>
+                                    </div>
+                                    <div class="col-xs-9 text-right">
+                                        <div class="huge">12</div>
+                                        <div>Videos</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" onclick="videos()">
+                                <div class="panel-footer">
+                                    <span class="pull-left">Manage Videos</span>
+                                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="panel panel-yellow">
+                            <div class="panel-heading">
+                                <div class="row">
+                                    <div class="col-xs-3">
+                                        <i class="fa fa-shopping-cart fa-5x"></i>
+                                    </div>
+                                    <div class="col-xs-9 text-right">
+                                        <div class="huge">124</div>
+                                        <div>Players</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" onclick="player()">
+                                <div class="panel-footer">
+                                    <span class="pull-left">Manage players</span>
+                                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="panel panel-red">
+                            <div class="panel-heading">
+                                <div class="row">
+                                    <div class="col-xs-3">
+                                        <i class="fa fa-support fa-5x"></i>
+                                    </div>
+                                    <div class="col-xs-9 text-right">
+                                        <div class="huge">13</div>
+                                        <div>Matches</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" onclick="match()">
+                                <div class="panel-footer">
+                                    <span class="pull-left">Manage Matches</span>
+                                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal for updating player -->
+                <div id="update-player" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <a class="close" data-dismiss="modal">x</a>
+                                <h3>Edit Player</h3>
+                            </div>
+                            <div class="modal-body">
+                                <center><img src="../../images/players/player.jpg"></center>
+                                <label>Number of matches</label><input type="number" class="form-control" id="nummatches" value="0">
+                                <label>Number of goals</label><input type="number" class="form-control" id="numgoals" value="0">
+                            </div>
+                            <div class="modal-footer">
+                                <center><button class="btn btn-success" onclick="just()">Update</button> </center>
+                                <a href="#" class="btn btn-danger" data-dismiss="modal">Close</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Player modals -->
+                <div id="playermodals"></div>
+                <!--End player modals -->
+
+
+                <div class="row belowhead">
+                <div class="col-lg-12" id="management">
+                <!-- Content displayed here -->
+                </div>
+                </div>
+
+
+            </div>
+            <!-- /.container-fluid -->
+
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.js"></script>
+
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+    <!--<script src="js/bootstrap.min.js"></script>-->
+
+    <!-- Morris Charts JavaScript -->
+    <!--<script src="js/plugins/morris/raphael.min.js"></script>
+    <script src="js/plugins/morris/morris.min.js"></script>
+    <script src="js/plugins/morris/morris-data.js"></script>-->
+    <script>
+        $(document).ready(function() {
+            confirmAdmin();
+            tenlatematchesmodals();
+        });
+</script>
+</body>
+</html>
