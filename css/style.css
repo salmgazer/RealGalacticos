@@ -42,3 +42,19 @@
 .demo-card-wide > .mdl-card__menu {
   color: #fff;
 }
+.demo-card-media.mdl-card {
+  /*width: 256px;*/
+  width: 100%
+  height: auto;
+  background: url('../images/coach.jpg');
+}
+.demo-card-media > .mdl-card__actions {
+  height: 52px;
+  /*padding: 16px;*/
+  background: rgba(0, 0, 0, 0.2);
+}
+.demo-card-media__filename {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+}
