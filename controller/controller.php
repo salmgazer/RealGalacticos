@@ -54,8 +54,7 @@ switch($cmd){
         latestmatches();
         break;
     case 14:
-        $num = $_REQUEST['items'];
-        get_latest_news($num);
+        get_latest_news();
         break;
     default:
         echo '{"result": 0, "message": "unknown command"}';
@@ -65,8 +64,9 @@ switch($cmd){
 /**
  * function to pass latest news items to js
  */
- function get_latest_news($num) {
+ function get_latest_news() {
    include_once('../model/news.php');
+   $num = $_REQUEST['items'];
    $news = new news();
    $row = $news->get_latest_news($num);
    if(!$row) {
