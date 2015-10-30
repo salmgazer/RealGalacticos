@@ -1,5 +1,11 @@
 <?php
-
+/**
+ * User: Sal
+ * Modified: Ali
+ * Date: 5/7/2015
+ * Time: 9:42 AM
+ */
+ 
 include_once('adb.php');
 class News extends adb{
 
