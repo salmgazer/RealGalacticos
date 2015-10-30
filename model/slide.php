@@ -48,3 +48,4 @@ class slide extends adb{
       return  $this->query($str_sql);
     }
 }
+

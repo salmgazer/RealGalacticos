@@ -11,6 +11,7 @@ function sendRequest(u){
     return result;	//return object
 }
 
+
 function load_about(){
     $("#about_us").load('./includes/about.txt');
 }
@@ -140,24 +141,17 @@ function get_slide_picture(){
     if(objResult.result == 0){
         alert(objResult.message);
     }
-    displaySlides(objResult.slides);
 
+    //displaySlides(objResult.slides);
+    //loading image
+    document.getElementById("mylanding").style.background = "url('./images/slider/"+objResult.slide[0]['picture_path']+"') center / cover";
+    document.getElementById("slide_message").innerHTML = objResult.slide[0]['picture_heading'];
 }
 
-function displaySlides(slides){
-    document.getElementById('myslides').innerHTML = '<div class="preloader-wrapper big active"><div class="spinner-layer spinner-blue"><div class="circle-clipper left"> <div class="circle"></div> </div><div class="gap-patch"> <div class="circle"></div> </div><div class="circle-clipper right"> <div class="circle"></div></div></div>';
-    myslides = "";
-    for(i = 0; i < slides.length; i++){
-        count = i + 1;
-        myslides += '<li><img src="images/slider/'+slides[i]['picture']+'" alt="Slide '+count+'"><div class="slider-caption"><div class="templatemo_homewrapper"><h1>'+slides[i]['firstline']+'</h1> <h2>'+slides[i]['secondline']+'</h2> <a href="#about" class="smoothScroll templatemo-slider-btn btn btn-default">About Us</a></div></div></li>';
-    }
-    document.getElementById('myslides').innerHTML = myslides;
 
-}
-
-function get_latest_news(){
-    document.getElementById('latest_news').innerHTML = '<div class="preloader-wrapper big active"><div class="spinner-layer spinner-blue"><div class="circle-clipper left"> <div class="circle"></div> </div><div class="gap-patch"> <div class="circle"></div> </div><div class="circle-clipper right"> <div class="circle"></div></div></div>';
-    var strUrl = "controller/controller.php?cmd=5";
+function get_home_news(){
+    document.getElementById('landingNews').innerHTML = '<div class="mdl-spinner mdl-spinner--single-color mdl-js-spinner is-active"></div>';
+    var strUrl = "controller/controller.php?cmd=14";
     var objResult = sendRequest(strUrl);
     if(objResult.result == 0){
         alert(objResult.message);
@@ -169,18 +163,9 @@ function get_latest_news(){
         count = i + 1;
         mynews += '<a href="#"><div class="col-sm-6 col-md-4 smallboxes"> <div id="news'+count+'"><img style="width: 100%" src="images/news/'+news[i]['thumbnail']+'"> <h3>'+news[i]['headline']+'</h3></div></div></a>';
     }
-    document.getElementById('latest_news').innerHTML = mynews;
+    document.getElementById('landingNews').innerHTML = mynews;
 }
 
-/*function displayLatestNews(news){
-    mynews = "";
-    for(i = 0; i < news.length; i++){
-        count = i + 1;
-        mynews += '<a href="#"><div class="col-sm-6 col-md-4 smallboxes"> <div id="news'+count+'"><img style="width: 100%" src="images/news/'+news[i]['thumbnail']+'"> <h3>'+news[i]['headline']+'</h3></div></div></a>';
-    }
-    document.getElementById('latest_news').innerHTML = mynews;
-
-}*/
 
 function get_latest_video(){
     document.getElementById('latest_video').innerHTML = '<div class="preloader-wrapper big active"><div class="spinner-layer spinner-blue"><div class="circle-clipper left"> <div class="circle"></div> </div><div class="gap-patch"> <div class="circle"></div> </div><div class="circle-clipper right"> <div class="circle"></div></div></div>';

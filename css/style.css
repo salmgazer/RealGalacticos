@@ -3,12 +3,11 @@
 }
 .demo-card-image.mdl-card {
   width: 100%;
-  height: auto;
+  height: 400px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 10px;
+  margin-top: 0px;
   margin-bottom: 10px;
-  background: url('../images/slider/light-bulb.jpg') center / cover;
 }
 .demo-card-image > .mdl-card__actions {
   height: 52px;
@@ -22,11 +21,79 @@
   text-align: center;
 }
 .demo-card-square.mdl-card {
-  width: auto;
-  height: 320px;
+  width: 100%;
+  height: auto;
 }
 .demo-card-square > .mdl-card__title {
   color: #fff;
   background:
     url('../images/slider/sliced-apple.jpg') bottom right 15% no-repeat #46B6AC;
+}
+.demo-card-wide.mdl-card {
+  /*width: 512px;*/
+  width: 100%;
+}
+.demo-card-wide > .mdl-card__title {
+  color: #fff;
+  height: 176px;
+  background: url('../images/background.jpg') center / cover;
+}
+.demo-card-wide > .mdl-card__menu {
+  color: #fff;
+}
+.demo-card-media.mdl-card {
+  /*width: 256px;*/
+  width: 100%
+  height: auto;
+  background: url('../images/coach.jpg');
+}
+.demo-card-media > .mdl-card__actions {
+  height: 100px;
+  /*padding: 16px;*/
+  background: rgba(0, 0, 0, 0.2);
+  line-height: 100px;
+}
+.demo-card-media__filename {
+    text-align: center;
+    color: #fff;
+    font-size: 2.3em;
+    font-weight: bold;
+    line-height: 1.1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#slide_message{
+    width: 100%;
+    /*height: 100px;*/
+    font-size: 1.7em;
+    font-family:  Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+}
+
+.whiten{
+    background-color: #EFEFEF;
+}
+
+.black-text{
+    color: #666666;
+}
+
+nav a .black-text{
+    color: #666666;
+}
+
+.mdl-layout__header-row .mdl-navigation__link{
+    color: #666666;
+}
+
+.mdl-layout__drawer-button{
+    color: black;
+}
+
+.demo-card-image__filename{
+    width: 100%;
+}
+
+.slide_message_div{
+    height: 100px;
 }
