@@ -68,7 +68,7 @@ switch($cmd){
  function get_latest_news($num) {
    include_once('../model/news.php');
    $news = new news();
-   $data = $news->get_latest_news($num);
+   $row = $news->get_latest_news($num);
    if(!$row) {
      echo '{"result": 0, "message": "No news available"}';
      return;
