@@ -39,7 +39,10 @@ class slide extends adb{
       $str_sql = "UPDATE slide_pictures SET slide_status = 'on' WHERE picture_id = $id";
       return  $this->query($str_sql);
     }
-
+    
+    /**
+     * function to update the details of a picture
+     */
     function update_picture($id, $heading, $path){
       $str_sql = "UPDATE slide_pictures SET picture_heading = '$heading' AND picture_path = '$path' WHERE picture_id = $id";
       return  $this->query($str_sql);
