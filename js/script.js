@@ -150,20 +150,13 @@ function get_slide_picture(){
 
 
 function get_home_news(){
-    document.getElementById('landingNews').innerHTML = '<div class="mdl-spinner mdl-spinner--single-color mdl-js-spinner is-active"></div>';
+    document.getElementById('most_recent_news').innerHTML = '<div class="mdl-spinner mdl-spinner--single-color mdl-js-spinner is-active" align="center"></div>';
     var strUrl = "controller/controller.php?cmd=14";
     var objResult = sendRequest(strUrl);
     if(objResult.result == 0){
         alert(objResult.message);
         return;
     }
-    mynews = "";
-    news = objResult.news;
-    for(i = 0; i < news.length; i++){
-        count = i + 1;
-        mynews += '<a href="#"><div class="col-sm-6 col-md-4 smallboxes"> <div id="news'+count+'"><img style="width: 100%" src="images/news/'+news[i]['thumbnail']+'"> <h3>'+news[i]['headline']+'</h3></div></div></a>';
-    }
-    document.getElementById('landingNews').innerHTML = mynews;
 }
 
 
