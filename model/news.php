@@ -5,18 +5,22 @@
  * Date: 5/7/2015
  * Time: 9:42 AM
  */
- 
+
 include_once('adb.php');
 class News extends adb{
-
-    function add_news($thumbnail, $picture1, $picture2, $news_date, $author, $headline, $content){
-    	$str_sql = "INSERT into news (thumbnail, picture1, picture2, news_date, author, content, headline)
-    		values ('$thumbnail', '$picture1', '$picture2', '$news_date', '$author', '$content', '$headline')";
+  /**
+   * Function to add new news item
+   */
+    function add_news($picture_path, $info){
+    	$str_sql = "INSERT INTO team_news (picture_path, news_info) VALUES ('$picture', '$path')";
     	return $this->query($str_sql);
     }
 
+    /**
+     * function to delete a news item
+     */
     function delete_news($id){
-    	$str_sql = "DELETE from news WHERE id=$id";
+    	$str_sql = "DELETE from team_news WHERE id=$id";
         return $this->query($str_sql);
     }
 
