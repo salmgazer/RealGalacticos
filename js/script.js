@@ -143,8 +143,8 @@ function get_slide_picture(){
     }
 
     //displaySlides(objResult.slides);
-    document.getElementById("landingImage").innerHTML = "<div id='mylanding' class='demo-card-image mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col'><div class='mdl-card__title mdl-card--expand'></div><div class='mdl-card__actions mdl-cell mdl-cell--9-dp'><span class='demo-card-image__filename'>Image.jpg</span</div>";
-    document.getElementById("mylanding").style.background = "url('../images/slider/"+objResult.slide[0]['picture_path']+"') center / cover";
+    document.getElementById("mylanding").style.background = "url('./images/slider/"+objResult.slide[0]['picture_path']+"') center / cover";
+    document.getElementById("slide_message").innerHTML = objResult.slide[0]['picture_heading'];
 }
 
 function displaySlides(slides){
