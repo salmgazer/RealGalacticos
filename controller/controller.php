@@ -53,10 +53,38 @@ switch($cmd){
     case 13:
         latestmatches();
         break;
+    case 14:
+        $num = $_REQUEST['items'];
+        get_latest_news($num);
+        break;
     default:
         echo '{"result": 0, "message": "unknown command"}';
         break;
 }
+
+/**
+ * function to pass latest news items to js
+ */
+ function get_latest_news($num) {
+   include_once('../model/news.php');
+   $news = new news();
+   $data = $news->get_latest_news($num);
+   if(!$row) {
+     echo '{"result": 0, "message": "No news available"}';
+     return;
+   }
+
+   echo '{"result": 1, "news": [';
+     while($row) {
+       echo json_encode($row);
+       $row = $news->fetch();
+       if ($row) {
+         echo ',';
+       }
+     }
+  echo ']}';
+  return;
+ }
 
 function next_match(){
     include('../model/matches.php');
