@@ -134,13 +134,14 @@ function close_players(){
     document.getElementById('close-players').innerHTML = "";
 }
 
-function get_slides(){
+function get_slide_picture(){
     var strUrl = "controller/controller.php?cmd=4";
     var objResult = sendRequest(strUrl);
     if(objResult.result == 0){
         alert(objResult.message);
     }
     displaySlides(objResult.slides);
+
 }
 
 function displaySlides(slides){

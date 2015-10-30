@@ -24,7 +24,7 @@ switch($cmd){
         get_players_byDivision();
         break;
     case 4:
-        get_slides();
+        get_slide_picture();
         break;
     case 5:
         get_latest_news();
@@ -114,24 +114,24 @@ function add_manager(){
     return;
 }
 
-function get_slides(){
+function get_slide_picture(){
     include('../model/slide.php');
     $slide = new slide();
-    $row = $slide->get_slides();
+    $row = $slide->get_slide_picture();
     if(!$row){
         echo '{"result":0, "message": "No slides"}';
         return;
     }
 
-    echo '{"result": 1, "slides": [';
-    while($row){
+    echo '{"result": 1, "slides": ['.jason_encode($row).']}"';
+    /*while($row){
         echo json_encode($row);
         $row = $slide->fetch();
         if($row){
             echo ",";
         }
     }
-    echo "]}";
+    echo "]}";*/
 
 }
 
