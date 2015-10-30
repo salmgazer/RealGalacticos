@@ -163,7 +163,7 @@ function get_slide_picture(){
 
 }
 
-function get_latest_news(){
+function get_latest_new(){
     include('../model/news.php');
     $news = new news();
     $row = $news->latest_news();
