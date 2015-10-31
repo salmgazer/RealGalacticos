@@ -76,7 +76,12 @@ switch($cmd){
 
    echo '{"result": 1, "news": [';
      while($row) {
-       echo json_encode($row);
+         echo '{"headline": "'.$row['headline'].'"';
+         echo ', "date_time": "'.$row['date_time'].'"';
+         echo ', "news_info": "'.$row['news_info'].'"';
+         echo ', "picture_path": "'.$row['picture_path'].'"}';
+         //echo $row;
+       //echo json_encode($row['news_info']);
        $row = $news->fetch();
        if ($row) {
          echo ',';

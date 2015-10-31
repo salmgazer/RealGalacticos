@@ -1,234 +1,396 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Real Galacticos Sporting Club</title>
-  <link rel="stylesheet" href="css/material.min.css">
-  <link rel="stylesheet" href="css/materialdesignicons.min.css">
-  <link rel="stylesheet" href="css/material-icons.css">
-  <link rel="stylesheet" href="css/style.css">
+	<head>
+		<meta charset="utf-8">
+		<!--
 
-</head>
-<body>
-  <!-- Uses a header that contracts as the page scrolls down. -->
+        -->
+		<title>Real Galacticos Sporting Club</title>
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <div class="demo-layout-waterfall mdl-layout mdl-js-layout whiten">
-    <header class="mdl-layout__header mdl-layout__header--waterfall whiten">
-      <!-- Top row, always visible -->
-      <div class="mdl-layout__header-row">
-        <!-- Title -->
-        <span class="mdl-layout-title black-text">Real Galacticos Sporting Club</span>
-        <div class="mdl-layout-spacer"></div>
-        <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
-        mdl-textfield--floating-label mdl-textfield--align-right">
-        <label class="mdl-button mdl-js-button mdl-button--icon"
-        for="waterfall-exp">
-        <i class="material-icons black-text">search</i>
-      </label>
-      <div class="mdl-textfield__expandable-holder">
-        <input class="mdl-textfield__input" type="text" name="sample"
-        id="waterfall-exp" />
-      </div>
-    </div>
-  </div>
-  <!-- Bottom row, not visible on scroll -->
-  <div class="mdl-layout__header-row">
-    <div class="mdl-layout-spacer"></div>
-    <!-- Navigation -->
-    <nav class="mdl-navigation">
-      <a class="mdl-navigation__link black-text" href="">Link</a>
-      <a class="mdl-navigation__link black-text" href="">Link</a>
-      <a class="mdl-navigation__link black-text" href="">Link</a>
-      <a class="mdl-navigation__link black-text" href="">Link</a>
-    </nav>
-  </div>
-</header>
-<div class="mdl-layout__drawer">
-  <span class="mdl-layout-title">Title</span>
-  <nav class="mdl-navigation">
-    <a class="mdl-navigation__link black-text" href="">Link</a>
-    <a class="mdl-navigation__link black-text" href="">Link</a>
-    <a class="mdl-navigation__link black-text" href="">Link</a>
-    <a class="mdl-navigation__link black-text" href="">Link</a>
-  </nav>
-</div>
-<main class="mdl-layout__content">
-  <!-- Content starts here -->
+		<link rel="stylesheet" href="css/animate.min.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/templatemo-style.css">
+		<script src="js/jquery.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.singlePageNav.min.js"></script>
+		<script src="js/typed.js"></script>
+		<script src="js/wow.min.js"></script>
+		<script src="js/custom.js"></script>
+	</head>
+	<body id="top">
 
-  <div class="page-content" id="landingImage">
-    <!-- Image card -->
-    <div id='mylanding' class="demo-card-image mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col">
-      <div class="mdl-card__title mdl-card--expand"></div>
-      <div class="mdl-card__actions mdl-cell mdl-cell--12-col slide_message_div">
-        <span class="demo-card-image__filename" id="slide_message"></span>
-      </div>
-    </div>
-  </div>
+		<!-- start preloader -->
+		<div class="preloader">
+			<div class="sk-spinner sk-spinner-wave">
+     	 		<div class="sk-rect1"></div>
+       			<div class="sk-rect2"></div>
+       			<div class="sk-rect3"></div>
+      	 		<div class="sk-rect4"></div>
+      			<div class="sk-rect5"></div>
+     		</div>
+    	</div>
+    	<!-- end preloader -->
 
-  <div id="landingInfo" class="mdl-grid">
-    <!-- Square card -->
-    <div id="landingNews" class="mdl-cell mdl-cell--8-col">
-      <div class="mdl-grid">
-        <div class="mdl-cell mdl-cell--12-col" id="most_recent_news">
-          <div class="demo-card-square mdl-card mdl-shadow--2dp">
-            <div class="mdl-card__title mdl-card--expand">
-              <h2 class="mdl-card__title-text">12 News</h2>
+        <!-- start header -->
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-4 col-xs-12">
+                        <p><i class="fa fa-phone"></i><span> Phone</span>+233-244-785-085</p>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-12">
+                        <a href="#" class="btn btn-primary text-center">Become a Sponsor</a>
+                    </div>
+                    <div class="col-md-5 col-sm-4 col-xs-12">
+                        <ul class="social-icon">
+                            <li><span>Meet us on</span></li>
+                            <li><a target="_blank" href="https://www.facebook.com/galacticosgh/" class="fa fa-facebook"></a></li>
+                            <!--<li><a href="#" class="fa fa-twitter"></a></li>-->
+                            <li><a href="#" class="fa fa-instagram"></a></li>
+                            <li><a target="_blank" href="https://www.youtube.com/channel/UC5tFFtL5PQekmkH_cX-zgxQ" class="fa fa-youtube"></a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="mdl-card__supporting-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Aenan convallis.
-            </div>
-            <div class="mdl-card__actions mdl-card--border">
-              <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                View Updates
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
+        </header>
+        <!-- end header -->
 
-      <div class="mdl-grid">
-        <div class="mdl-cell mdl-cell--6-col">
-          <div class="demo-card-square mdl-card mdl-shadow--2dp">
-            <div class="mdl-card__title mdl-card--expand">
-              <h2 class="mdl-card__title-text">Quad News 1</h2>
-            </div>
-            <div class="mdl-card__supporting-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Aenan convallis.
-            </div>
-            <div class="mdl-card__actions mdl-card--border">
-              <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                View Updates
-              </a>
-            </div>
-          </div>
-        </div>
+    	<!-- start navigation -->
+		<nav class="navbar navbar-default templatemo-nav" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="icon icon-bar"></span>
+						<span class="icon icon-bar"></span>
+						<span class="icon icon-bar"></span>
+					</button>
+					<a href="./" class="navbar-brand">Real Galacticos S.C</a>
+				</div>
+				<div class="collapse navbar-collapse">
+					<ul class="nav navbar-nav navbar-center">
+						<li><a href="./">HOME</a></li>
+						<li><a href="#about">NEWS</a></li>
+						<li><a href="#team">GALLERY</a></li>
+						<li><a href="#service">PROFILES</a></li>
+						<!--<li><a href="#portfolio">PORTFOLIO</a></li>-->
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- end navigation -->
 
-        <div class="mdl-cell mdl-cell--6-col">
-          <div class="demo-card-square mdl-card mdl-shadow--2dp">
-            <div class="mdl-card__title mdl-card--expand">
-              <h2 class="mdl-card__title-text">Quad News 2</h2>
-            </div>
-            <div class="mdl-card__supporting-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Aenan convallis.
-            </div>
-            <div class="mdl-card__actions mdl-card--border">
-              <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                View Updates
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
+    	<!-- start home -->
+    	<section id="home">
+    		<div class="container">
+    			<div class="row">
+    				<div class="col-md-offset-2 col-md-8">
+    					<h1 class="wow fadeIn" data-wow-offset="50" data-wow-delay="0.9s">Train Better, Play <span>Better!</span></h1>
+    					<!--<div class="element">
+                            <div class="sub-element">Hello, this is Typed.js</div>
+                            <div class="sub-element">Awesome Template is provided by templatemo.com website for everyone</div>
+                            <div class="sub-element">Download, edit and apply this awesome template for your websites</div>
+                        </div>-->
+    					<!--<a data-scroll href="#about" class="btn btn-default wow fadeInUp" data-wow-offset="50" data-wow-delay="0.6s">GET STARTED</a>-->
+    				</div>
+    			</div>
+    		</div>
+    	</section>
+    	<!-- end home -->
+<div class="maincontent">
+    	<!-- start about -->
+		<section id="about">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-sm-8 col-xs-12 home_news">
+                     <h4 class="wow text-left">NEWS</h4>
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+    					<a href="#">
+                            <div class="team-wrapper news_item_link">
+    						<img src="images/news/mainnews.jpg" width="100%" class="img-responsive home_news_item" alt="team img 1">
+    							<div class="team-des news_summary">
+    								<h4>TRACY</h4>
+    								<span>Designer</span>
+    								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget diam et laoreet phasellus ut nisi id leo molest.</p>
 
-      <div class="mdl-grid">
-        <div class="mdl-cell mdl-cell--6-col">
-          <div class="demo-card-square mdl-card mdl-shadow--2dp">
-            <div class="mdl-card__title mdl-card--expand">
-              <h2 class="mdl-card__title-text">Quad News 3</h2>
-            </div>
-            <div class="mdl-card__supporting-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Aenan convallis.
-            </div>
-            <div class="mdl-card__actions mdl-card--border">
-              <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                View Updates
-              </a>
-            </div>
-          </div>
-        </div>
+                                </div>
+    				        </div>
+    					</a>
+					</div>
 
-        <div class="mdl-cell mdl-cell--6-col">
-          <div class="demo-card-square mdl-card mdl-shadow--2dp">
-            <div class="mdl-card__title mdl-card--expand">
-              <h2 class="mdl-card__title-text">Quad News 4</h2>
-            </div>
-            <div class="mdl-card__supporting-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Aenan convallis.
-            </div>
-            <div class="mdl-card__actions mdl-card--border">
-              <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                View Updates
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> <!--landingNews -->
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                     <a href="#">
+    					<div class="team-wrapper news_item_link">
+    						<img src="images/news/news1.jpg" class="img-responsive home_news_item" alt="team img 1">
+    							<div class="team-des news_summary">
+    								<h4>TRACY</h4>
+    								<span>Designer</span>
+    								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget diam et laoreet phasellus ut nisi id leo molest.</p>
+    							</div>
+    					</div>
+                     </a>
+					</div>
 
-    <div id="landingFixtures" class="mdl-cell mdl-cell--4-col">
-      <div class="mdl-grid">
-        <div class="mdl-cell mdl-cell--12-col">
-          <!-- Wide card with share menu button -->
-          <div class="demo-card-wide mdl-card mdl-shadow--2dp">
-            <div class="mdl-card__title">
-              <h2 class="mdl-card__title-text">Welcome</h2>
-            </div>
-            <div class="mdl-card__supporting-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Mauris sagittis pellentesque lacus eleifend lacinia...
-            </div>
-            <div class="mdl-card__actions mdl-card--border">
-              <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                Get Started
-              </a>
-            </div>
-            <div class="mdl-card__menu">
-              <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-                <i class="material-icons">share</i>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>  <!--landingFixtures -->
-  </div>   <!--landingInfo -->
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                     <a href="#">
+    					<div class="team-wrapper news_item_link">
+    						<img src="images/news/news2.jpg" class="img-responsive home_news_item" alt="team img 1">
+    							<div class="team-des news_summary">
+    								<h4>TRACY</h4>
+    								<span>Designer</span>
+    								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget diam et laoreet phasellus ut nisi id leo molest.</p>
+    							</div>
+    					</div>
+                     </a>
+					</div>
 
-  <div id="landingMedia" class="mdl-grid">
-    <div class="mdl-cell mdl-cell--4-col">
-            <!-- Media card -->
-      <div class="demo-card-media mdl-card mdl-shadow--2dp">
-        <div class="mdl-card__title mdl-card--expand"></div>
-        <div class="mdl-card__actions">
-          <span class="demo-card-media__filename">Image.jpg</span>
-        </div>
-      </div>
-    </div>
-    <div class="mdl-cell mdl-cell--4-col">
-            <!-- Media card -->
-      <div class="demo-card-media mdl-card mdl-shadow--2dp">
-        <div class="mdl-card__title mdl-card--expand"></div>
-        <div class="mdl-card__actions">
-          <span class="demo-card-media__filename">Image.jpg</span>
-        </div>
-      </div>
-    </div>
-    <div class="mdl-cell mdl-cell--4-col">
-            <!-- Media card -->
-      <div class="demo-card-media mdl-card mdl-shadow--2dp">
-        <div class="mdl-card__title mdl-card--expand"></div>
-        <div class="mdl-card__actions">
-          <span class="demo-card-media__filename">Image.jpg</span>
-        </div>
-      </div>
-    </div>
-  </div> <!--landingMedia -->
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <a href="#">
+    					<div class="team-wrapper news_item_link">
+    						<img src="images/news/news3.jpg" class="img-responsive home_news_item" alt="team img 1">
+    							<div class="team-des news_summary">
+    								<h4>TRACY</h4>
+    								<span>Designer</span>
+    								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget diam et laoreet phasellus ut nisi id leo molest.</p>
+    							</div>
+    					</div>
+                        </a>
+					</div>
 
-</main>
-</div>
-<script src="js/jquery.js"></script>
-<script src="js/material.js"></script>
-<script src="js/script.js"></script>
-<script>
-$(document).ready(function(){
-  //Action called here
-  get_slide_picture();
-  get_home_news();
-});
-</script>
-</body>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <a href="#">
+    					<div class="team-wrapper news_item_link">
+    						<img src="images/news/news4.jpg" class="img-responsive home_news_item" alt="team img 1">
+    							<div class="team-des news_summary">
+    								<h4>TRACY</h4>
+    								<span>Designer</span>
+    								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget diam et laoreet phasellus ut nisi id leo molest.</p>
+    							</div>
+    					</div>
+                        </a>
+					</div>
+
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-12">
+						<div class="media">
+							<div class="media-heading-wrapper">
+								<div class="media-object pull-left">
+									<i class="fa fa-comment-o"></i>
+								</div>
+								<h3 class="media-heading">FREE SUPPORT</h3>
+							</div>
+							<div class="media-body">
+								<p>Credits go to <a rel="nofollow" href="http://pixabay.com">Pixabay</a> for homepage image and <a rel="nofollow" href="http://unsplash.com">Unsplash</a> for portfolio images. Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-12 wow fadeInRight" data-wow-offset="50" data-wow-delay="0.6s">
+						<div class="media">
+							<div class="media-heading-wrapper">
+								<div class="media-object pull-left">
+									<i class="fa fa-html5"></i>
+								</div>
+								<h3 class="media-heading">HTML5 &AMP; CSS3</h3>
+							</div>
+							<div class="media-body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie. Adipiscing vitae vel quam proin eget mauris eget. Lorem ipsum dolor sit amet.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- end about -->
+
+    	<!-- start team -->
+    	<!--<section id="team">
+    		<div class="container">
+    			<div class="row">
+    				<div class="col-md-12">
+    					<h2 class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s"><span>AWESOME</span> TEAM</h2>
+    				</div>
+    				<div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="1.3s">
+    					<div class="team-wrapper">
+    						<img src="images/team-img1.jpg" class="img-responsive" alt="team img 1">
+    							<div class="team-des">
+    								<h4>TRACY</h4>
+    								<span>Designer</span>
+    								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget diam et laoreet phasellus ut nisi id leo molest.</p>
+                                </div>
+    					</div>
+    				</div>
+    				<div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="1.6s">
+    					<div class="team-wrapper">
+    						<img src="images/team-img2.jpg" class="img-responsive" alt="team img 2">
+    							<div class="team-des">
+    								<h4>MARY</h4>
+    								<span>Developer</span>
+    								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget diam et laoreet phasellus ut nisi id leo molest.</p>
+    							</div>
+    					</div>
+    				</div>
+    				<div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="1.3s">
+    					<div class="team-wrapper">
+    						<img src="images/team-img3.jpg" class="img-responsive" alt="team img 3">
+    							<div class="team-des">
+    								<h4>JULIA</h4>
+    								<span>Director</span>
+    								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget diam et laoreet phasellus ut nisi id leo molest.</p>
+    							</div>
+    					</div>
+    				</div>
+    				<div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="1.6s">
+    					<div class="team-wrapper">
+    						<img src="images/team-img4.jpg" class="img-responsive" alt="team img 4">
+    							<div class="team-des">
+    								<h4>LINDA</h4>
+    								<span>Manager</span>
+    								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget diam et laoreet phasellus ut nisi id leo molest.</p>
+    							</div>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+    	</section>-->
+    	<!-- end team -->
+
+    	<!-- start service -->
+    	<!--<section id="service">
+    		<div class="container">
+    			<div class="row">
+    				<div class="col-md-12">
+    					<h2 class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s">OUR <span>AWESOME</span> THINGS</h2>
+    				</div>
+    				<div class="col-md-4 wow fadeIn" data-wow-offset="50" data-wow-delay="0.6s">
+    					<i class="fa fa-laptop"></i>
+    					<h4>Web Design</h4>
+    					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie. Adipiscing vitae vel quam proin eget mauris eget. Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie.</p>
+    				</div>
+    				<div class="col-md-4 active wow fadeIn" data-wow-offset="50" data-wow-delay="0.9s">
+    					<i class="fa fa-cloud"></i>
+    					<h4>Cloud Computing</h4>
+    					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie. Adipiscing vitae vel quam proin eget mauris eget. Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie.</p>
+    				</div>
+    				<div class="col-md-4 wow fadeIn" data-wow-offset="50" data-wow-delay="0.6s">
+    					<i class="fa fa-cog"></i>
+    					<h4>UX Design</h4>
+    					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie. Adipiscing vitae vel quam proin eget mauris eget. Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie.</p>
+    				</div>
+    			</div>
+    		</div>
+    	</section>-->
+    	<!-- end servie -->
+
+    	<!-- start portfolio -->
+    	<section id="portfolio">
+    		<div class="container">
+    			<div class="row">
+    				<div class="col-md-12">
+    					<h2 class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s"><span>AWESOME</span> PORTFOLIO</h2>
+    				</div>
+    				<div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="0.6s">
+                        <div class="portfolio-thumb">
+    					   <img src="images/portfolio-img1.jpg" class="img-responsive" alt="portfolio img 1">
+                                <div class="portfolio-overlay">
+                                    <h4>Project One</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget dia.</p>
+                                    <a href="#" class="btn btn-default">DETAIL</a>
+                                </div>
+                        </div>
+    				</div>
+    				<div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="0.6s">
+                        <div class="portfolio-thumb">
+                           <img src="images/portfolio-img2.jpg" class="img-responsive" alt="portfolio img 2">
+                                <div class="portfolio-overlay">
+                                    <h4>Project Two</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget dia.</p>
+                                    <a href="#" class="btn btn-default">DETAIL</a>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="0.6s">
+                        <div class="portfolio-thumb">
+                           <img src="images/portfolio-img3.jpg" class="img-responsive" alt="portfolio img 3">
+                                <div class="portfolio-overlay">
+                                    <h4>Project Three</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget dia.</p>
+                                    <a href="#" class="btn btn-default">DETAIL</a>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="0.6s">
+                        <div class="portfolio-thumb">
+                           <img src="images/portfolio-img4.jpg" class="img-responsive" alt="portfolio img 4">
+                                <div class="portfolio-overlay">
+                                    <h4>Project Four</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget dia.</p>
+                                    <a href="#" class="btn btn-default">DETAIL</a>
+                                </div>
+                        </div>
+                    </div>
+    			</div>
+    		</div>
+    	</section>
+    	<!-- end portfolio -->
+
+    	<!-- start contact -->
+    	<section id="contact">
+    		<div class="container">
+    			<div class="row">
+    				<div class="col-md-12">
+    					<h2 class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s">CONTACT <span>AWESOME</span></h2>
+    				</div>
+    				<div class="col-md-6 col-sm-6 col-xs-12 wow fadeInLeft" data-wow-offset="50" data-wow-delay="0.9s">
+    					<form action="#" method="post">
+    						<label>NAME</label>
+    						<input name="fullname" type="text" class="form-control" id="fullname">
+
+                            <label>EMAIL</label>
+    						<input name="email" type="email" class="form-control" id="email">
+
+                            <label>MESSAGE</label>
+    						<textarea name="message" rows="4" class="form-control" id="message"></textarea>
+
+                            <input type="submit" class="form-control">
+    					</form>
+    				</div>
+    				<div class="col-md-6 col-sm-6 col-xs-12 wow fadeInRight" data-wow-offset="50" data-wow-delay="0.6s">
+    					<address>
+    						<p class="address-title">OUR ADDRESS</p>
+    						<span>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie.</span>
+    						<p><i class="fa fa-phone"></i> 010-020-0340</p>
+    						<p><i class="fa fa-envelope-o"></i> awesome@company.com</p>
+    						<p><i class="fa fa-map-marker"></i> 663 New Walk Roadside, Birdeye View, GO 11020</p>
+    					</address>
+    					<ul class="social-icon">
+    						<li><h4>WE ARE SOCIAL</h4></li>
+    						<li><a href="#" class="fa fa-facebook"></a></li>
+    						<li><a href="#" class="fa fa-twitter"></a></li>
+    						<li><a href="#" class="fa fa-instagram"></a></li>
+    					</ul>
+    				</div>
+    			</div>
+    		</div>
+    	</section>
+    	<!-- end contact -->
+</div> <!-- END REST OF BODY -->
+        <!-- start copyright -->
+        <footer id="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <p class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s">
+                       	Copyright &copy; 2084 Company Name</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- end copyright -->
+
+	</body>
 </html>
